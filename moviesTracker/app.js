@@ -1,8 +1,4 @@
-//1
-
 const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
-
-//2
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -12,13 +8,11 @@ const personalMovieDB = {
     private: false
 };
 
-//3
+const lastFilm = prompt("Один из последних просмотренных фильмов?", ''),
+      estimation = prompt("На сколько оцените по 10-бальной шкале?", '');
 
-var lastFilm = prompt("Один из последних просмотренных фильмов?", '');
-var estimation = prompt("На сколько оцените по 10-бальной шкале?", '');
+// personalMovieDB.movies = {
+//     lastFilm: estimation
+// };
 
-personalMovieDB.movies = {
-    lastFilm: estimation
-};
-
-console.log(25);
+personalMovieDB.movies[lastFilm] = estimation;
