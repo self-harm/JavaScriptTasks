@@ -1,10 +1,10 @@
 //1
 
-var numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", '');
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
 
 //2
 
-personalMovieDB = {
+const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
     actors: {},
@@ -21,4 +21,4 @@ personalMovieDB.movies = {
     lastFilm: estimation
 };
 
-console.log(personalMovieDB.movies.lastFilm);
+console.log(25);
