@@ -24,4 +24,14 @@ for(let i=0; i<numberOfFilms; i++){
     }
 }
 
+if(personalMovieDB.count < 10){
+    document.write("Просмотрено довольно мало фильмов..");
+}
+else if(personalMovieDB.count < 30){
+    document.write("Вы - классический зритель!");
+}
+else {
+    document.write("Вы - киноман!");
+}
+
 console.log(personalMovieDB);
