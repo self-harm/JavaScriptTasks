@@ -8,11 +8,20 @@ const personalMovieDB = {
     private: false
 };
 
-const lastFilm = prompt("Один из последних просмотренных фильмов?", ''),
-      estimation = prompt("На сколько оцените по 10-бальной шкале?", '');
+for(let i=0; i<numberOfFilms; i++){
+    const a = prompt('Один из последних фильмов?', '');
+    const b = prompt('На сколько оцените?', '');
 
-// personalMovieDB.movies = {
-//     lastFilm: estimation
-// };
+    if(a != null && b != null
+         && a != '' && b != '' 
+         && a.length < 50 && b.length < 50){
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } 
+    else{
+        console.log('error');
+        i--;
+    }
+}
 
-personalMovieDB.movies[lastFilm] = estimation;
+console.log(personalMovieDB);
