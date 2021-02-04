@@ -15,7 +15,7 @@ Second, print each consonant (i.e., non-vowel) in  on a new line in the same ord
 function vowelsAndConsonants(s) {
     //I believe there is a better way to illustrate a regex
     const vowelRegex = s.match(/[aeiou]/ig);
-    const consonantRegex = s.match(/[bcdfgjklmnpqrstvwxz]/ig);
+    const consonantRegex = s.match(/[bcdfghjklmnpqrstvwxz]/ig);
 
     //write only vowels into console
     for(let i=0; i<vowelRegex.length; i++){
